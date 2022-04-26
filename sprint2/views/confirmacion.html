@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <title>Confirmación de la compra</title>
+</head>
+<body>
+    <header>
+        <div class="cabeza">
+            <div class="logo">
+                <a href="/"><img src="/img/electodo log.png" alt="electodo"></a>
+            </div>
+            <div class="buscador">
+                    <input class="buscar-texto" type="text" placeholder="¿Qué producto estás buscando?">
+                <button class="boton">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <nav class="nav-header-menu">
+                <ul>
+                    <li><a href=""><i class="fas fa-bell"></i></a></li>
+                    <li><a href="/login"><i class="fas fa-user-circle"></i></a></li>
+                    <li><a href=""><i class="fas fa-heart"></i></a></li>
+                    <li><a href="/CarritoDeCompras"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+            <nav class="nav-header-menu2">
+                <div class="buscador2">
+                    <input type="text" class="buscar-texto2">
+                    <a href="" class="boton-busc">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="/login">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/CarritoDeCompras">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="nav-header-items">
+            <ul>
+                <li><a href=""><i class="fas fa-laptop"></i> Laptops</a></li>
+                <li><a href=""><i class="fas fa-desktop"></i> PC</a></li>
+                <li><a href=""><i class="fas fa-mouse"></i> Mouse</a></li>
+                <li><a href=""><i class="fas fa-keyboard"></i> Teclados</a></li>
+                <li><a href=""><i class="fas fa-headphones-alt"></i> Auriculares</a></li>
+                <li><a href=""><i class="fas fa-volume-up"></i> Audio</a></li>
+                <li><a href=""><i class="fas fa-mobile-alt"></i> Celulares</a></li>
+                <li><a href=""><i class="fas fa-gamepad"></i> Gaming</a></li>
+                <li><a href=""><i class="fab fa-xbox"></i> Consolas</a></li>
+                <li><a href=""><i class="fas fa-print"></i> Impresoras</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-header-items2">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle bg-primary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+                </button>
+                <ul class="dropdown-menu dropdown p-2 mb-2 bg-primary" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-laptop"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-desktop"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-mouse"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-keyboard"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-headphones-alt"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-volume-up"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-mobile-alt"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-gamepad"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fab fa-xbox"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-print"></i></a></li>
+                </ul>
+              </div>
+            <ul>
+                <li><a href=""><i class="fas fa-bell"></i></a></li>
+                <li><a href=""><i class="fas fa-heart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="carrito">
+     <nav>
+         <div class="navegacion">
+        <i class="fas fa-truck"></i>
+         <p>Carrito / Punto de entrega</p> 
+         </div>
+         <div class="navegacion2">
+          <i class="fas fa-money-bill-alt"></i>
+         <p>Método de pago</p>
+           </div>
+         <div class="aqui">
+           <i class="far fa-check-circle"></i>   
+          <p>Confirmación de la compra</p>   
+         </div>
+     </nav>
+     <section class="cuerpo2">
+        <div class="total-dos">
+            <h3>Total</h3>
+            <h3>$85.749</h3>
+        </div>
+        <section class="datos">
+                <p>Datos personales:</p>
+            <div class="dato">
+                <form action="">
+                    <label for="email">E-mail</label>
+                    <input class="caja-dato" type="email" name="email" id="email">
+                </form>
+            </div>
+            <div class="dato">
+                <form action="">
+                    <label for="nombre">Nombres/s</label>
+                    <input class="caja-dato" type="text" name="nombre" id="nombre"></form>
+            </div>
+            <div class="dato">
+                <form action="">
+                    <label for="apellido">Apellido/s</label>
+                    <input class="caja-dato" type="text" name="apellido" id="apellido"></form>
+            </div>
+            <div class="dato">
+                <form action="">
+                    <label for="dni">DNI</label>
+                    <input class="caja-dato" type="text" name="dni" id="dni"></form>
+            </div>
+            <div class="dato">
+                <form action="">
+                    <label for="contacto">Número de contacto</label>
+                    <input class="caja-dato" type="tel" name="contacto" id="contacto"></form>
+            </div>
+            <div class="dato">
+                <form action="">
+                    <label class="comentario" for="comentario">Comentario</label>
+                    <textarea class="coment" name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                   </form>
+            </div>
+        </section>   
+     </section>
+        <div class="continuar-dos">
+            <button type="submit">Confirmar</button>
+        </div>
+    </main>
+    <footer class="final">
+        <div class="secciones-footer">
+            <section class="seccion-newsletter">
+                <div>
+                    <p>Newsletter</p>
+                    <span>Suscribite para recibir nuestras ofertas y novedades</span>
+                </div>
+                <div class="email-buscador">
+                    <form action="">
+                        <input class="buscar-email" type="text" placeholder="email">
+                            <button class="boton2">
+                                <i class="fas fa-arrow-right"></i></i>
+                            </button>
+                    </form>
+                </div>
+            </section>
+            <section class="seccion-datos">
+                <div class="mas-buscados">
+                    <p class="title">Más buscados</p>
+                    <p>Promociones</p>
+                    <p>Envíos gratis</p>
+                </div>
+                <div class="ayuda">
+                    <p class="title">Ayuda</p>
+                    <p>Preguntas frecuentes</p>
+                    <p>Métodos de pago</p>
+                    <p>Métodos de envío</p>
+                    <p>Costos de envío</p>
+                    <p>Términos y condiciones</p>
+                </div>
+                <div class="contactanos">
+                    <p class="title">Contáctanos</p>
+                    <p><i class="fas fa-phone-alt"></i> 11 2345-3212</p>
+                    <p><i class="far fa-envelope"></i> xxxx@xxxx.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dirección</p>
+                </div>
+                <div class="sigamos-conectados">
+                    <p class="title">Sigamos conectados</p>
+                    <div>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                </div>
+            </section>
+            <section class="copyr">
+                <p>Copyright © 2021 - ElecTodo</p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

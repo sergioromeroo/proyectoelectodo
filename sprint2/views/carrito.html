@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <header>
+        <div class="cabeza">
+            <div class="logo">
+                <a href="/"><img src="/img/electodo log.png" alt="electodo"></a>
+            </div>
+            <div class="buscador">
+                    <input class="buscar-texto" type="text" placeholder="¿Qué producto estás buscando?">
+                <button class="boton">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <nav class="nav-header-menu">
+                <ul>
+                    <li><a href=""><i class="fas fa-bell"></i></a></li>
+                    <li><a href="/login"><i class="fas fa-user-circle"></i></a></li>
+                    <li><a href=""><i class="fas fa-heart"></i></a></li>
+                    <li><a href="/CarritoDeCompras"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+            <nav class="nav-header-menu2">
+                <div class="buscador2">
+                    <input type="text" class="buscar-texto2">
+                    <a href="" class="boton-busc">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="/login">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/CarritoDeCompras">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="nav-header-items">
+            <ul>
+                <li><a href=""><i class="fas fa-laptop"></i> Laptops</a></li>
+                <li><a href=""><i class="fas fa-desktop"></i> PC</a></li>
+                <li><a href=""><i class="fas fa-mouse"></i> Mouse</a></li>
+                <li><a href=""><i class="fas fa-keyboard"></i> Teclados</a></li>
+                <li><a href=""><i class="fas fa-headphones-alt"></i> Auriculares</a></li>
+                <li><a href=""><i class="fas fa-volume-up"></i> Audio</a></li>
+                <li><a href=""><i class="fas fa-mobile-alt"></i> Celulares</a></li>
+                <li><a href=""><i class="fas fa-gamepad"></i> Gaming</a></li>
+                <li><a href=""><i class="fab fa-xbox"></i> Consolas</a></li>
+                <li><a href=""><i class="fas fa-print"></i> Impresoras</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-header-items2">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle bg-primary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+                </button>
+                <ul class="dropdown-menu dropdown p-2 mb-2 bg-primary" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-laptop"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-desktop"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-mouse"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-keyboard"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-headphones-alt"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-volume-up"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-mobile-alt"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-gamepad"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fab fa-xbox"></i></a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-print"></i></a></li>
+                </ul>
+              </div>
+            <ul>
+                <li><a href=""><i class="fas fa-bell"></i></a></li>
+                <li><a href=""><i class="fas fa-heart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="carrito">
+     <nav>
+         <div class="aqui">
+        <i class="fas fa-truck"></i>
+         <p>Carrito / Punto de entrega</p> 
+         </div>
+         <div class="navegacion">
+          <i class="fas fa-money-bill-alt"></i>
+         <p>Método de pago</p>
+         </div>
+         <div class="navegacion2">
+            <i class="far fa-check-circle"></i>
+            <p>Confirmación de la compra</p> 
+         </div>
+     </nav>
+     <section>
+         <article>
+             <i class="fas fa-trash-alt"></i>
+             <img src="/img/notebook-carrito.jpeg" alt="">
+             <p class="descripcion">Notebook Celeron 14'' Memoria 4gb Almacenaje 128gb - Tedge</p>
+             <div>
+              <p>Precio</p>
+                 <p>$47.499</p>   
+             </div>
+                 <div>
+                   <p>Cantidad</p>
+                   <form action="" class="form-cant"><button class="menos" >-</button><input class="cantidad" type="text" placeholder="1"><button class="mas">+</button></form>
+                 <h6>922 disponibles</h6>
+                 </div>
+                <div>
+                 <p >Subtotal</p>
+                 <p class="subtotal">$47.499</p>    
+                </div>
+         </article>
+         <article>
+             <i class="fas fa-trash-alt"></i>
+             <img src="/img/auriculares-carrito.jpeg" alt="">
+             <p class="descripcion">Auriculares In-ear inalámbricos Xiaomi Redmi AirDots 2 negro</p>
+             <div>
+               <p>Precio</p>
+                 <p>$2.251</p>  
+             </div>
+                 <div>
+                 <p>Cantidad</p>    
+                 <form action="" class="form-cant"><button class="menos">-</button><input class="cantidad" type="text" placeholder="1"><button class="mas">+</button></form>
+                 <h6>520 disponibles</h6>    
+                 </div>
+                 <div>
+                 <p>Subtotal</p>
+                 <p class="subtotal">$2.251</p>    
+                 </div>
+         </article>
+         <article>
+             <i class="fas fa-trash-alt"></i>
+             <img src="/img/celular-carrito.jpeg" alt="" width="100" height="200">
+             <p class="descripcion"> Samsung Galaxy A32 128 GB awesome black 4 GB RAM</p>
+             <div>
+               <p>Precio</p>
+                 <p>$35.999</p>  
+             </div>
+                 <div>
+                 <p>Cantidad</p>
+                 <form action="" class="form-cant"><button class="menos">-</button><input class="cantidad" type="text" placeholder="1"><button class="mas">+</button></form>
+                 <h6>125 disponibles</h6>    
+                 </div>
+                 <div>
+                 <p>Subtotal</p>
+                 <p class="subtotal">$35.999</p>    
+                 </div>
+         </article>
+     </section>
+     <section class="cupon-envio">
+
+        <section class="cupon">
+         <p>Si tenés un cupón de descuento y querés asignarlo a esta compra, completá el siguiente campo con el código del cupón.
+         </p>
+         <form action=""><input class="cod-cupon" type="text" placeholder="Código cupón" name="cupón"><button>Aplicar</button></form>
+     </section>
+     <section class="envio">
+         <div class="caja-envio">
+            <p class="dire">Envío a <input class="cod-cupon" type="text" placeholder="Dirección" name="Dirección"></p>
+            <p class="p-e">$204.99</p>
+         </div>
+         <div class="caja-total">
+         <p class="total">Total</p>
+         <p class="n-total">$85.749</p>
+         </div>
+
+     </section>
+
+     </section>
+     
+     <section class="t-y-c">
+         
+        <p><button><input type="checkbox" value="Acepto los términos y condiciones" name="términos y condiciones"></button>Aceptar los <a href="">términos y condiciones</a></p>
+     </section>
+     
+     <div class="continuar">
+         <button><a href="/">Comprar más productos</a></button>
+         <button><a href="/MetodoDePago">Continuar compra</a></button>
+     </div>
+    </main>
+    <footer class="final">
+        <div class="secciones-footer">
+            <section class="seccion-newsletter">
+                <div>
+                    <p>Newsletter</p>
+                    <span>Suscribite para recibir nuestras ofertas y novedades</span>
+                </div>
+                <div class="email-buscador">
+                    <form action="">
+                        <input class="buscar-email" type="text" placeholder="email">
+                            <button class="boton2">
+                                <i class="fas fa-arrow-right"></i></i>
+                            </button>
+                    </form>
+                </div>
+            </section>
+            <section class="seccion-datos">
+                <div class="mas-buscados">
+                    <p class="title">Más buscados</p>
+                    <p>Promociones</p>
+                    <p>Envíos gratis</p>
+                </div>
+                <div class="ayuda">
+                    <p class="title">Ayuda</p>
+                    <p>Preguntas frecuentes</p>
+                    <p>Métodos de pago</p>
+                    <p>Métodos de envío</p>
+                    <p>Costos de envío</p>
+                    <p>Términos y condiciones</p>
+                </div>
+                <div class="contactanos">
+                    <p class="title">Contáctanos</p>
+                    <p><i class="fas fa-phone-alt"></i> 11 2345-3212</p>
+                    <p><i class="far fa-envelope"></i> xxxx@xxxx.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dirección</p>
+                </div>
+                <div class="sigamos-conectados">
+                    <p class="title">Sigamos conectados</p>
+                    <div>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                </div>
+            </section>
+            <section class="copyr">
+                <p>Copyright © 2021 - ElecTodo</p>
+            </section>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
